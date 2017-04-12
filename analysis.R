@@ -72,7 +72,5 @@ clean = function(){
     dt       <- merge.data(dataPath)
     tidy <- summarize.data(dt)
     
-    write.csv(tidy, "UCI_HAR_tidy.csv", row.names=FALSE) 
+    write.table(tidy,"UCI_HAR_tidy.txt", row.names=FALSE) 
 }
-
-
